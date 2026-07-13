@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gowtham Kandasamy</title>
+    <!-- Redirect all 404s back to the SPA entry point -->
+    <script>
+      // GitHub Pages serves 404.html for unknown paths.
+      // Encode the path as a query param and redirect to index.html,
+      // which then re-routes via the React app (single-page app pattern).
+      const repo = '/gowtham-portfolio';
+      const path = window.location.pathname.replace(repo, '');
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const redirect = repo + '/?p=' + encodeURIComponent(path + search) + hash;
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body></body>
+</html>
