@@ -32,7 +32,7 @@ const JOBS: Job[] = [
     title: 'Senior Software Engineer',
     company: 'Arcadia',
     period: 'May 2022 – Mar 2025',
-    location: 'Chennai, India',
+    location: 'Chennai, India (Remote)',
     type: 'Urjanet, an Arcadia enterprise',
     accentColor: 'border-violet-500/40',
     dotColor: 'bg-violet-400',
@@ -141,11 +141,9 @@ export default function Experience() {
           </div>
           <div>
             <div className="text-slate-100 font-semibold text-sm">
-              B.E. Electronics &amp; Communication Engineering
             </div>
             <div className="text-slate-500 text-xs mt-0.5">
-              Karpagam College of Engineering (Anna University) · 2015–2019 · Score: 86.63%
-              &nbsp;·&nbsp; Best Project of Year · "It's My Ship" Award
+              &nbsp;Best Project of the Year (CAE) &nbsp;|&nbsp; "It's My Ship" Award
             </div>
           </div>
         </div>

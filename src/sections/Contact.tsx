@@ -1,4 +1,4 @@
-import { Mail, Link, GitBranch, Camera, MapPin, Send, ArrowUpRight } from 'lucide-react';
+import { Mail, Link, GitBranch, MapPin, Send, ArrowUpRight } from 'lucide-react';
 
 const SOCIALS = [
   {
@@ -16,15 +16,7 @@ const SOCIALS = [
     url: 'https://github.com/gowtham943',
     color: 'hover:border-slate-500/50 hover:bg-slate-500/5 hover:text-slate-300',
     badge: 'Open Source',
-  },
-  {
-    icon: <Camera size={20} />,
-    label: 'Instagram',
-    handle: '@gowtham_kandasamy',
-    url: 'https://www.instagram.com/gowtham_kandasamy?igsh=MjRheXp0ZzRtaDBt',
-    color: 'hover:border-pink-500/50 hover:bg-pink-500/5 hover:text-pink-400',
-    badge: 'Creative Side',
-  },
+  }
 ];
 
 export default function Contact() {
