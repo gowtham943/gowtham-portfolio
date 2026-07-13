@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ArrowDown, GitBranch, Link } from 'lucide-react';
+import { ArrowDown, GitBranch, Link, Download } from 'lucide-react';
+import resumePdf from '../resource/Gowtham_Kandasamy_Resume.pdf?url';
 
 const TITLES = [
   'Senior Backend Engineer',
@@ -81,13 +82,14 @@ export default function Home() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14">
-          <button
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+          <a
+            href={resumePdf}
+            download="Gowtham_Kandasamy_Resume.pdf"
             className="btn-primary px-7 py-3 rounded-xl text-white font-semibold text-sm shadow-lg flex items-center gap-2"
           >
-            View Projects
-            <ArrowDown size={16} />
-          </button>
+            <Download size={16} />
+            Download Resume
+          </a>
           <a
             href="https://github.com/gowtham943"
             target="_blank"
@@ -111,7 +113,7 @@ export default function Home() {
         {/* Stats row */}
         <div className="flex flex-wrap justify-center gap-8 sm:gap-12 text-center">
           {[
-            { value: '7+', label: 'Years Experience' },
+            { value: '7', label: 'Years Experience' },
             { value: '85%', label: 'Ops Time Saved' },
             { value: '$13k', label: 'Infra Cost Cut / yr' },
             { value: '60k+', label: 'Accounts Managed' },

@@ -82,7 +82,7 @@ export default function Contact() {
               </h4>
               <div className="space-y-2">
                 {[
-                  ['Experience', '7+ Years'],
+                  ['Experience', '7 Years'],
                   ['Domain', 'Energy · AI'],
                   ['Primary Stack', 'Java · Python'],
                   ['Email', 'gowthamkandasamy32@gmail.com'],
